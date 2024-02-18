@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: url("https://trello-backgrounds.s3.amazonaws.com/61366540801e1a33952bfb20/2560x1436/6a44f7a7f33d130819b8cfa9a7fb05b4/background.png") no-repeat center;
+ }
+
 main {
     width: 100vw;
     height: 100vh;
