@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background: url("https://trello-backgrounds.s3.amazonaws.com/61366540801e1a33952bfb20/2560x1436/6a44f7a7f33d130819b8cfa9a7fb05b4/background.png") no-repeat center;
+}
+
+p {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 40px;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    color: #DFE1E6;
+    
+}
+
+#lista-exercicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#exercicios {
+    background-color: #DFE1E6;
+    color: #172B4D;
+    text-transform: uppercase;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#exercicios a {
+    text-decoration: none;
+}
