@@ -13,4 +13,3 @@ exercicios.map((exercicio)=>{
         <h2><a href="${exercicio.url}">${exercicio.titulo}</a></h2>
     </div>`
 })
-

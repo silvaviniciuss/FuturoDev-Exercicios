@@ -53,3 +53,36 @@ main div {
 #exercicios a {
     text-decoration: none;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 30px;
+}
+
+label {
+    font-size: 30px;
+}
+
+input {
+    height: 40px;
+    font-size: 25px;
+}
+
+.btn {
+    border-radius: 5px;
+    height: 50px;
+    width: 50%;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: blueviolet;
+    color: white;
+}

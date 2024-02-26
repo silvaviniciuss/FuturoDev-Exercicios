@@ -1,56 +1,45 @@
-const joao = {
-    nome: "João",
-    idade: 32,
-    nacionalidade: "Brasileira",
-    profissao: "Instrutor"
-}
 
-const maria = {
-    nome: "Maria",
-    idade: 56,
-    nacionalidade: "Brasileira",
-    profissao: "Constureira"
-}
+const pessoas = [
+    {
+        nome: "João",
+        idade: 32,
+        nacionalidade: "Brasileira",
+        profissao: "Instrutor"
+    },
+    {
+        nome: "Maria",
+        idade: 56,
+        nacionalidade: "Brasileira",
+        profissao: "Constureira"
+    },
+    {
+        nome: "José",
+        idade: 86,
+        nacionalidade: "Brasileira",
+        profissao: "Entregador"
+    }
+]
 
-const jose = {
-    nome: "José",
-    idade: 86,
-    nacionalidade: "Brasileira",
-    profissao: "Entregador"
-}
 
-
-const informações = (objeto) => {
+pessoas.map((pessoa)=>{
     console.log(`
-    Nome: ${objeto.nome}
-    Idade: ${objeto.idade}
-    Nacionalidade: ${objeto.nacionalidade}
-    Profissão: ${objeto.profissao}
+    Nome: ${pessoa.nome}
+    Idade: ${pessoa.idade}
+    Nacionalidade: ${pessoa.nacionalidade}
+    Profissão: ${pessoa.profissao}
     `)
-}
+})
 
-const dados = (objeto) => {
-    let lista = document.querySelector("#lista")
-    const nome = document.createElement('li')
-    const idade = document.createElement('li')
-    const nacionalidade = document.createElement('li')
-    const profissao = document.createElement('li')
-    
-    nome.innerText = `Nome: ${objeto.nome}`
-    idade.innerHTML = `Idade: ${objeto.idade}`
-    nacionalidade.innerHTML = `Nacionalidade: ${objeto.nacionalidade}`
-    profissao.innerHTML = `Profissão: ${objeto.profissao}`
+const conteudo = document.querySelector("#conteudo")
 
-    lista.appendChild(nome)
-    lista.appendChild(idade)
-    lista.appendChild(nacionalidade)
-    lista.appendChild(profissao)
-
-}
-
-
-informações(joao)
-informações(maria)
-informações(jose)
-
-dados(joao)
+pessoas.map((pessoa)=>{
+    conteudo.innerHTML += 
+    `<div>
+        <ul>
+            <li>Nome: ${pessoa.nome}</li>
+            <li>Idade: ${pessoa.idade}</li>
+            <li>Nacionalidade: ${pessoa.nacionalidade}</li>
+            <li>Profissão: ${pessoa.profissao}</li>
+        </ul>
+    </div>`
+})
