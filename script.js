@@ -6,6 +6,10 @@ const exercicios = [
     {
         titulo: "m1s06",
         url: "M1S06/index.html"
+    },
+    {
+        titulo: "m1s07",
+        url: "M1S07/index.html"
     }
 ]
 
