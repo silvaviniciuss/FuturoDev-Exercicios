@@ -110,6 +110,10 @@ input {
     letter-spacing: .1rem;
 }
 
+.btn-signin:hover {
+    background: #2245f7;
+}
+
 .container-lower-right-side {
     position: absolute;
     top: 50%;
@@ -146,13 +150,20 @@ input {
     border:solid 2px #E6E6E6;
 }
 
+.container-google-facebook-button button:hover {
+    background-color: #4F4F4F;
+    color: #E6E6E6;
+    border: none;
+}
+
 .container-google-facebook-button button img {
     position: absolute;
     left: 5%;
 }
 
 
-
-
-
-
+@media (max-width: 1250px) {
+    .container-left-side {
+        display: none;
+    }
+  }
