@@ -1,0 +1,90 @@
+:root {
+    --main-text-color: #FFFFFF;
+    --background-button: #FFBF00;
+    --color-text-button: #332200;
+    --main-background: #000;
+    --text-color: #B2B2B2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--main-background);
+    color: var(--main-text-color);
+}
+
+header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.menu {
+    display: flex;
+    column-gap: 50px;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+}
+
+.left-side {
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.left-side h1 {
+    font-size: 3.4rem;
+}
+
+.left-side h1 span{
+    color: #FFBF00;
+}
+
+.left-side-subtitle {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.left-side-subtitle h3 {
+    letter-spacing: .5px;
+    font-weight: 200;
+    line-height: 25px;
+    color: var(--text-color);
+}
+
+.left-side-subtitle button {
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    background-color: var(--background-button);
+    color: var(--color-text-button);
+    border: none;
+}
+
+.right-side {
+    width: 50%;
+    margin-right: 100px;
+}
+
+.right-side img{
+    width: 100%;
+    border-radius: 5px;
+}
