@@ -162,7 +162,8 @@ input {
 }
 
 
-
-
-
-
+@media (max-width: 1250px) {
+    .container-left-side {
+        display: none;
+    }
+  }
